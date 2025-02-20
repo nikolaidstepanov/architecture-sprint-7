@@ -14,6 +14,6 @@
 | **cluster-readonly** (ClusterRole) | - (кластерные ресурсы) `pods`, `nodes`, `namespaces`, `persistentvolumes`, `storageclasses`: get, list, watch                                                                | Любая ограниченная группа, нуждающаяся в чтении всей конфигурации кластера |
 
 ## Как настраивать
-1. Создать namespace: `development`: `kubectl create namespace development`
+1. Создать namespace `development`: `kubectl create namespace development`
 2. Создать роли: `kubectl apply -f role-creating.yaml`
 3. Привязать пользователей (или группы) к ролям: `kubectl apply -f role-binding.yaml`
